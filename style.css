@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+}
+
+body{
+    background-color: #09090b;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    color: black;
+}
+
+.side-bar{
+    background-color: white;
+    width: 400px;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.heading{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.reset{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: #ff0000;
+    transition:0.3s;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+    max-width: 100%;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: white;
+    object-fit: contain;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
